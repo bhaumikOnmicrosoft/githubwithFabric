@@ -1,0 +1,388 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "contact",
+        "sourceLineageTag": "[dbo].[contact]",
+        "columns": [
+          {
+            "name": "c6",
+            "dataType": "int64",
+            "sourceColumn": "c6",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c6",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c66",
+            "dataType": "int64",
+            "sourceColumn": "c66",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c66",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c666",
+            "dataType": "int64",
+            "sourceColumn": "c666",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c666",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "contact",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "customer",
+        "sourceLineageTag": "[dbo].[customer]",
+        "columns": [
+          {
+            "name": "c5",
+            "dataType": "int64",
+            "sourceColumn": "c5",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c5",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c55",
+            "dataType": "int64",
+            "sourceColumn": "c55",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c55",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c555",
+            "dataType": "int64",
+            "sourceColumn": "c555",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c555",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "customer",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "dept",
+        "sourceLineageTag": "[dbo].[dept]",
+        "columns": [
+          {
+            "name": "c4",
+            "dataType": "int64",
+            "sourceColumn": "c4",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c4",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c44",
+            "dataType": "int64",
+            "sourceColumn": "c44",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c44",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "dept",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "employee",
+        "sourceLineageTag": "[dbo].[employee]",
+        "columns": [
+          {
+            "name": "c1",
+            "dataType": "int64",
+            "sourceColumn": "c1",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c1",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c11",
+            "dataType": "int64",
+            "sourceColumn": "c11",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c11",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "employee",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "manager",
+        "sourceLineageTag": "[dbo].[manager]",
+        "columns": [
+          {
+            "name": "c3",
+            "dataType": "int64",
+            "sourceColumn": "c3",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c3",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c33",
+            "dataType": "int64",
+            "sourceColumn": "c33",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c33",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "c333",
+            "dataType": "int64",
+            "sourceColumn": "c333",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c333",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "manager",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "testtable",
+        "sourceLineageTag": "[dbo].[testtable]",
+        "columns": [
+          {
+            "name": "c1",
+            "dataType": "int64",
+            "sourceColumn": "c1",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c1",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "testtable",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}
