@@ -306,6 +306,21 @@
                 "value": "Automatic"
               }
             ]
+          },
+          {
+            "name": "c3332",
+            "dataType": "int64",
+            "sourceColumn": "c3332",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "c3332",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
           }
         ],
         "partitions": [
